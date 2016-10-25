@@ -898,24 +898,12 @@ var SERVER_SERVICE_USE_PROXY = true;
           if (!goog.isDefAndNotNull(server.name)) {
             server.name = 'Bing';
           }
+          var bing_api_key = 'ApCiIdI8N4-OPZRLbs6Nt2FZjK-wr0lRmx1hiZH5iPZAnn3VfmEnEqWJSTnABYt4';
           server.layersConfig = [
-            {Title: 'BingRoad', Name: 'Road', sourceParams: {imagerySet: 'Road'}},
-            {Title: 'BingAerial', Name: 'Aerial', sourceParams: {imagerySet: 'Aerial'}},
+            {Title: 'BingRoad', Name: 'Road', sourceParams: {imagerySet: 'Road', key: bing_api_key}},
+            {Title: 'BingAerial', Name: 'Aerial', sourceParams: {imagerySet: 'Aerial', key: bing_api_key}},
             {Title: 'BingAerialWithLabels', Name: 'AerialWithLabels',
-              sourceParams: {imagerySet: 'AerialWithLabels'}},
-            {Title: 'BingCollinsBart', Name: 'CollinsBart', sourceParams: {imagerySet: 'collinsBart'}},
-            {Title: 'BingSurvey', Name: 'Survey', sourceParams: {imagerySet: 'ordnanceSurvey'}}
-          ];
-          deferredResponse.resolve(server);
-        } else if (server.ptype === 'gxp_mapquestsource') {
-          server.defaultServer = true;
-          if (!goog.isDefAndNotNull(server.name)) {
-            server.name = 'MapQuest';
-          }
-          server.layersConfig = [
-            {Title: 'MapQuestSat', Name: 'sat', sourceParams: {layer: 'sat'}},
-            {Title: 'MapQuestHybrid', Name: 'hyb', sourceParams: {layer: 'hyb'}},
-            {Title: 'MapQuestOSM', Name: 'osm', sourceParams: {layer: 'osm'}}
+              sourceParams: {imagerySet: 'AerialWithLabels', key: bing_api_key}}
           ];
           deferredResponse.resolve(server);
         } else if (server.ptype === 'gxp_arcrestsource') {

@@ -10,3 +10,6 @@ reports/
 ZZZIGNORE_*.js
 .log
 .DS_Store
+/.vagrant/secret.yaml
+.vagrant/
+Vagrantfile
