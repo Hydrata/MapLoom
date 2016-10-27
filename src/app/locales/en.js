@@ -249,10 +249,8 @@
     'srs': 'SRS',
     'server': 'Server',
     'credentials': 'Credentials',
-    'enter_credentials': 'Please enter your credentials for:',
-    'skip_credentials': 'Or you may click Skip to log in anonymously. Only public layer will be visible to anonymous ' +
-        'users and changes to those layers will not be associated with a user. It is recommended that you log in if ' +
-        'you have credentials for this server.',
+    'enter_credentials': 'Credentials feature is not fully implemented yet.',
+    'skip_credentials': 'Click Skip to continue, and answer yes if you are asked about adding servers in the next dialog',
     'skip': 'Skip',
     'connected_as': 'Connected as {{value}}.',
     'connect_as': 'Connect as...',
