@@ -202,12 +202,22 @@
   <div class="loom-notification-poster"></div>
   <div class="loom-legend"></div>
   <div class="loom-exclusive-mode"></div>
+
   <div id="zoom-to-world-border" class="map-btn-border" tooltip-append-to-body="true"
              tooltip-placement="left" tooltip="{{'zoom_world' | translate}}">
     <div id="zoom-to-world" ng-click="mapService.zoomToExtent()">
       <i class="glyphicon glyphicon-globe"></i>
     </div>
   </div>
+
+  <div id="hydrata-logo-border" class="map-btn-border hydrata-logo-border" tooltip-append-to-body="true"
+             tooltip-placement="right" tooltip="Hydrata Tooltip">
+    <div id="hydrata-logo">
+      <a href="http://hydrata.com">&nbsp;&nbsp;Powered by Hydrata&nbsp;&nbsp;</a>
+    <img height="20px" src="{{STATIC_URL}}img/hydrata_logo_rect_no_text.png">
+    </div>
+  </div>
+
   <div id="switch-coords-border" class="map-btn-border" tooltip-append-to-body="true"
        tooltip-placement="right" tooltip="{{'switch_coords' | translate}}">
     <div id="switch-coords" ng-click="mapService.switchMousePosCoordFormat()">
